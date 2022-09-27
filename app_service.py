@@ -1,6 +1,7 @@
 ''' Simple service that serves user data '''
 
 import json
+import random
 
 class AppService:
     ''' Service class for working with user data '''
@@ -12,4 +13,4 @@ class AppService:
         return self.users
 
     def get_user(self, user_id):
-        return self.users.get(str(user_id), 'World')
+        return random.choice(self.users.get(str(user_id), ['World']))

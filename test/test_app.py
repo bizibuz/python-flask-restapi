@@ -4,7 +4,7 @@ import requests
 class AppIntegrationTest(unittest.TestCase):
     def test_existing_user(self):
         res = requests.get('http://localhost:5000/1')
-        self.assertEqual('Hello, Simon!', res.text)
+        self.assertTrue(res.text == 'Hello, Simon!' or res.text == 'Hello Tai Man!')
 
     def test_invalid_user(self):
         res = requests.get('http://localhost:5000/10')

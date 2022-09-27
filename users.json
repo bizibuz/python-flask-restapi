@@ -1,5 +1,5 @@
 {
-       "1": "Simon",
-       "2": "Peter",
-       "3": "Ben"
+       "1": ["Simon", "Tai Man"],
+       "2": ["Peter", "Siu Man"],
+       "3": ["Ben"]
 }
